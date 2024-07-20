@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contain">
+            <div class="calculatepart">
+                <h2>Expence tracker</h2>
+                <form id="form" action="index.php" method="post">
+                    <input id="description" class="input" type="text" name="amount" placeholder="Enter description" required><br>
+                    <br>
+                    <select id="Category" class="input"  name="options" >
+                        <option  value="">Select Catagory</option>
+                               <option value="food">Food</option>
+                               <option value="travel">Transportation</option>
+                               <option value="shopping">Shopping</option>
+                               <option value="entertainment">Entertainment</option>
+                               <option value="others">Others</option>
+                            </select><br>
+                            <br>
+                               
+                    <input id="amount" class="input" type="text" name="description" placeholder="Enter Amount" required><br>
+                    <br>
+                    <input id="add" class="input" type="submit" name="submit" value="Add Expence">
+                    </form>
+            </div>
+            <div class="description">
+                <h2>Expence Details</h2>
+                <table >
+                    <tr >
+                        <th id="descriptions" class="table" >Description</th>
+                        <th id="Catagorys" class="table" >Category</th>
+                        <th id="amounts" class="table" >Amount</th>
+                        </tr>
+                     <tbody id="suggestion">
+    
+                     </tbody> 
+                     </table>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
